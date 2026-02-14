@@ -7,7 +7,7 @@
 
 body {
     scroll-behavior: smooth;
-    background: #f5f5f5;
+    background: #e6f2ff;
 }
 
 nav {
@@ -36,7 +36,7 @@ nav ul li a {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #0b3d91;
     color: white;
     display: flex;
     flex-direction: column;
@@ -104,3 +104,4 @@ button:hover {
 .hero button {
     margin: 10px;
 }
+
