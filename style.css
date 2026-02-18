@@ -5,19 +5,24 @@
     font-family: Arial, sans-serif;
 }
 
+/* ---------- BODY ---------- */
+
 body {
     scroll-behavior: smooth;
-    background: #e6f2ff;
+    background: #C0CED1;   /* soft blue-grey */
 }
+
+/* ---------- NAVIGATION ---------- */
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
-    background: #111;
+    background: black;   /* deep navy */
     color: white;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -32,11 +37,19 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
+
+nav ul li a:hover {
+    color: #071C34;   /* sky blue */
+}
+
+/* ---------- HERO SECTION ---------- */
 
 .hero {
     height: 100vh;
-    background: #0b3d91;
+    width: 100%;
+    background-color: #071C34 !important;  /* force dark */
     color: white;
     display: flex;
     flex-direction: column;
@@ -45,19 +58,35 @@ nav ul li a {
     text-align: center;
 }
 
+
 .hero button {
-    padding: 10px 20px;
+    margin: 15px;
+    padding: 12px 28px;
     border: none;
-    background: white;
-    color: #333;
-    margin-top: 20px;
+    background: whitesmoke;
+    color: black;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.3s ease;
 }
+
+.hero button:hover {
+    background: #071C34;
+    transform: translateY(-3px);
+}
+
+/* ---------- GENERAL SECTIONS ---------- */
 
 section {
     padding: 100px 10%;
 }
+
+/* Alternate soft background for visual separation */
+section:nth-child(even) {
+    background: #f5f9fb;
+}
+
+/* ---------- SKILLS ---------- */
 
 .skills-grid {
     display: grid;
@@ -70,8 +99,10 @@ section {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+
+/* ---------- PROJECTS ---------- */
 
 .project-container {
     display: flex;
@@ -85,23 +116,88 @@ section {
     flex: 1;
     min-width: 250px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-nav ul li a:hover {
-    color: #667eea;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    transition: 0.3s;
-}
-.hero button {
-    margin: 10px;
 }
 
+/* ---------- POSITIONS ---------- */
+
+.positions-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.position-box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ---------- CONTACT SECTION ---------- */
+
+#contact {
+    background: linear-gradient(135deg, #144361, #071C34);
+    color: white;
+    text-align: center;
+    padding: 120px 10%;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.contact-card p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 28px;
+    background: #87B2CC;
+    color: #071C34;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-btn.outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact-btn.outline:hover {
+    background: white;
+    color: #071C34;
+}
