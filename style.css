@@ -5,20 +5,17 @@
     font-family: Arial, sans-serif;
 }
 
-/* ---------- BODY ---------- */
-
 body {
     scroll-behavior: smooth;
-    background: #C0CED1;   /* soft blue-grey */
+    background: #C0CED1;   
 }
 
-/* ---------- NAVIGATION ---------- */
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
-    background: black;   /* deep navy */
+    background: black; 
     color: white;
     position: fixed;
     width: 100%;
@@ -41,15 +38,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #071C34;   /* sky blue */
+    color: #071C34;  
 }
-
-/* ---------- HERO SECTION ---------- */
-
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: #071C34 !important;  /* force dark */
+    background-color: #071C34 !important;  
     color: white;
     display: flex;
     flex-direction: column;
@@ -75,18 +69,16 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
-/* ---------- GENERAL SECTIONS ---------- */
+
 
 section {
     padding: 100px 10%;
 }
 
-/* Alternate soft background for visual separation */
 section:nth-child(even) {
     background: #f5f9fb;
 }
 
-/* ---------- SKILLS ---------- */
 
 .skills-grid {
     display: grid;
@@ -102,7 +94,6 @@ section:nth-child(even) {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* ---------- PROJECTS ---------- */
 
 .project-container {
     display: flex;
@@ -124,7 +115,6 @@ section:nth-child(even) {
     transform: translateY(-10px);
 }
 
-/* ---------- POSITIONS ---------- */
 
 .positions-container {
     max-width: 800px;
@@ -140,7 +130,6 @@ section:nth-child(even) {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* ---------- CONTACT SECTION ---------- */
 
 #contact {
     background: linear-gradient(135deg, #144361, #071C34);
